@@ -9,36 +9,48 @@ h1 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
+    display: flex; 
+align-items: center;  
+justify-content: center; 
 }
 
 .login .loginForm {
     width: 100%;
+    /* display: flex; 
+align-items: center;  
+justify-content: center;  */
 }
 
 .login .loginForm input {
     display: block;
-    width: 100%;
+    width: 50%;
+    text-align: center; 
+    justify-content: center; 
     border: 1px solid #DDD;
     padding: 8px 6px;
     margin: 12px 0;
     transition: ease-in-out 100ms;
     font-family: inherit;
+    
+    display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .login .loginForm input:focus {
     border-color: #BBB;
 }
 
-.login .loginForm .error {
-    background-color: #A8201A;
-    color: #FFF;
+/* .login .loginForm .error { */
+    /* background-color: #A8201A; */
+    /* color: #FFF;
     padding: 12px;
     font-size: 12px;
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    margin: 10px 0;
-}
+    margin: 10px 0; */
+
 
 .login .loginForm .error .timesSign {
     margin-right: 6px;
@@ -49,14 +61,16 @@ h1 {
     width: 20%;
     display: block;
     padding: 4px;
-    border: 4px solid #1E91D6;
+    border: 4px solid #6439ff;
     font-family: inherit;
-    background-color: #1E91D6;
+    background-color: #6439ff;
     transition: ease-in-out 100ms;
     color: #FFF;
     cursor: pointer;
     margin-top: 20px;
     font-weight: 500;
+
+    margin: auto
 }
 
 .login .loginForm button:focus {

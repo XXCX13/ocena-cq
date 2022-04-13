@@ -1,5 +1,11 @@
 import React, { useState } from 'react'
+import dotenv from  'dotenv'
 import '../styles/Login.css';
+
+
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+
 
 const Login = (props) => {
 
@@ -10,7 +16,7 @@ const Login = (props) => {
   const formSubmit = (e) => {
     e.preventDefault();
 
-    if (username === 'admin' && password === '12345') {
+    if (username === process.env.REACT_APP_USERNAME && password === process.env.REACT_APP_PASSWORD) {
       props.logged(true);
     } else {
       setError(true);
@@ -32,6 +38,8 @@ const Login = (props) => {
 
   return (
     <div className="login">
+       <Stack sx={{ width: '100%' }} spacing={2}>
+
       
       <h1>Log In</h1>
 
@@ -42,7 +50,7 @@ const Login = (props) => {
         {
           error ?
           <div className="error">
-            <p>Username or password is incorrect!</p>
+            <Alert severity="error">Username or password is incorrect!</Alert>
             <p className="timesSign" onClick={closeError}>×</p>
           </div> :
           null
@@ -50,6 +58,8 @@ const Login = (props) => {
 
         <button>Log In</button>
       </form>
+
+      </Stack>
 
     </div>
   );
