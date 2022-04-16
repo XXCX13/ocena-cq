@@ -56,7 +56,7 @@ const Widget = ({ type }) => {
       break;
     case "earning":
       data = {
-        title: "PAYMENTS VIKTIM / 9050$",
+        title: "PAYMENTS / 9050$",
         isMoney: true,
         link: "View all payments",
         icon: (
