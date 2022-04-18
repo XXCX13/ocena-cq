@@ -8,10 +8,9 @@ import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalance
 const Widget = ({ type }) => {
   let data;
 
-  let timerId = setTimeout(function tick() {
-    alert('Write to support');
-    timerId = setTimeout(tick, 5000); // (*)
-  }, 2000);
+  setTimeout(function alr()
+  { alert("Write to support"); }, 3000);
+
 
   //temporary
   // const amount = 100;
