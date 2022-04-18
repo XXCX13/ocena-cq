@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import dotenv from  'dotenv'
+import React, { useState } from 'react';
 import '../styles/Login.css';
 
 
